@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".Register_pg">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
     <EditText
         android:id="@+id/inputMobile"
         android:layout_width="0dp"
@@ -181,17 +191,17 @@
 
         <ImageView
             android:id="@+id/googleLogin"
-            android:layout_width="wrap_content"
+            android:layout_width="185dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             app:srcCompat="@drawable/google_img" />
 
         <ImageView
             android:id="@+id/fbLogin"
-            android:layout_width="wrap_content"
+            android:layout_width="211dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/facebook_logo" />
+            app:srcCompat="@mipmap/fb_new_logo_foreground" />
     </LinearLayout>
 
     <TextView
@@ -239,5 +249,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnRegister" />
 
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

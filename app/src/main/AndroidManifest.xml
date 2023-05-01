@@ -14,15 +14,6 @@
 
         <activity
             android:name=".Register_pg"
-            android:exported="false" />
-        <activity
-            android:name=".UpdateProfile"
-            android:exported="false" />
-        <activity
-            android:name=".UserProfile"
-            android:exported="false" />
-        <activity
-            android:name=".LoginNew"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,8 +22,18 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Register"
+            android:name=".UpdateProfile"
             android:exported="false" />
+        <activity
+            android:name=".UserProfile"
+            android:exported="false" />
+        <activity
+            android:name=".LoginNew"
+            android:exported="false"/>
+        <activity
+            android:name=".Register"
+            android:exported="true"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="false">
