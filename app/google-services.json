@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "940818637183",
+    "firebase_url": "https://growit-mad-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "growit-mad",
+    "storage_bucket": "growit-mad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:940818637183:android:54a502371805b8b877ba4a",
+        "android_client_info": {
+          "package_name": "com.example.mad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "940818637183-fukskurdohfsj0ue3u2n3ipc8iqi8s3r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkV6wWOgj-lGDPAyz6IP-APro6ywAlrmw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "940818637183-fukskurdohfsj0ue3u2n3ipc8iqi8s3r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
