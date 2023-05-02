@@ -43,6 +43,7 @@
                 android:textSize="16dp"/>
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/homeLogin"
                 android:layout_width="@dimen/main_btn_width"
                 android:layout_height="@dimen/main_btns_height"
                 android:layout_marginTop="@dimen/main_btn_marginTop"
@@ -53,6 +54,7 @@
                 android:textStyle="bold" />
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/homeRegister"
                 android:layout_width="@dimen/main_btn_width"
                 android:layout_height="@dimen/main_btns_height"
                 android:layout_marginTop="@dimen/main_btn_marginTop"

@@ -23,6 +23,9 @@ class LoginNew : AppCompatActivity() {
             val intent = Intent(this, Register_pg::class.java)
             startActivity(intent)
         }
+        binding.backBtnLog.setOnClickListener{
+            finish() // finish the current activity to go back to the previous one
+        }
 
         binding.btnLogin.setOnClickListener{
             val email = binding.loginInputEmail.text.toString()

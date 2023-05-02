@@ -5,12 +5,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
-import com.example.mad.databinding.ActivityRegisterPgBinding
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.firestore.FirebaseFirestore
 
 class Register_pg : AppCompatActivity() {
@@ -22,6 +21,16 @@ class Register_pg : AppCompatActivity() {
         setContentView(R.layout.activity_register_pg)
 
         val registration_btn = findViewById<TextView>(R.id.btnRegister)
+        val goToLoginBtn = findViewById<TextView>(R.id.goToLogin)
+        val backButton = findViewById<ImageView>(R.id.backBtnReg)
+
+        goToLoginBtn.setOnClickListener{
+            val intent = Intent(this, LoginNew::class.java)
+            startActivity(intent)
+        }
+        backButton.setOnClickListener{
+            finish() // finish the current activity to go back to the previous one
+        }
 
         registration_btn.setOnClickListener{
             /**
