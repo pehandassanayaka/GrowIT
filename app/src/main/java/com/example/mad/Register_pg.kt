@@ -10,15 +10,22 @@ import android.widget.TextView
 import android.widget.Toast
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.firestore.FirebaseFirestore
 
 class Register_pg : AppCompatActivity() {
 
-     private var mFirebaseAuth = FirebaseAuth.getInstance()
-     private var firebaseStore = FirebaseFirestore.getInstance()
+    private var mFirebaseAuth = FirebaseAuth.getInstance()
+    private var firebaseStore = FirebaseFirestore.getInstance()
+    private lateinit var database: DatabaseReference
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register_pg)
+
+        // Initializing the Realtime Database reference
+        database = FirebaseDatabase.getInstance().getReference("users")
 
         val registration_btn = findViewById<TextView>(R.id.btnRegister)
         val goToLoginBtn = findViewById<TextView>(R.id.goToLogin)
@@ -47,23 +54,27 @@ class Register_pg : AppCompatActivity() {
              * Creating a user onb firebase
              */
 
-             mFirebaseAuth.createUserWithEmailAndPassword(email, password)
-                 .addOnCompleteListener(
+            mFirebaseAuth.createUserWithEmailAndPassword(email, password)
+                .addOnCompleteListener(
                     OnCompleteListener {registrationProcess ->
                         if(registrationProcess.isSuccessful){
                             /**
-                             * if the user is create then we can store all the user details on t5he firebase database using a data class user.kt
-                             * The users will be stored under a collection called user. This is implemented using the function below
-                             * When the user is registered, gets a unique id and this will be stored too
+                             * if the user is create then we can store all the user details on the firebase Realtime Database and Firestore Database using a data class user.kt
+                             * The users will be stored under a collection called user in Firestore Database.
+                             * In Realtime Database, users will be stored under a key that is the unique id assigned to each user by Firebase Authentication service.
+                             * This is implemented using the functions below.
                              */
                             val currentUserId = mFirebaseAuth.currentUser!!.uid
                             val userDetailsToStore = User( currentUserId, name, phone, address, email )
 
                             //Passing the userDetailsToStore object into the registerUser() function
                             registerUser(userDetailsToStore)
+
+                            //Saving user details to Realtime Database
+                            database.child(currentUserId).setValue(userDetailsToStore)
                         }
                     }
-                 )
+                )
 
         }
 
