@@ -81,6 +81,8 @@ class Register_pg : AppCompatActivity() {
                 Toast.makeText(this,"Registered Successfully",
                     Toast.LENGTH_SHORT
                 ).show()
+                val intent = Intent(this, LoginNew::class.java)
+                startActivity(intent)
             }
             // If the registration fails, Display a message
             .addOnFailureListener { e ->

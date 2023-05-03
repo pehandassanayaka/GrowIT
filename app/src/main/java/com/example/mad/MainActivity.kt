@@ -6,11 +6,17 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var firebaseAuth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        firebaseAuth = FirebaseAuth.getInstance()
 
         val homeLoginBtn = findViewById<Button>(R.id.homeLogin)
         val homeRegBtn = findViewById<Button>(R.id.homeRegister)
@@ -26,5 +32,14 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
+    override fun onStart(){
+        super.onStart()
+        if(firebaseAuth.currentUser != null){
+            val intent = Intent(this, UserProfile::class.java)
+            startActivity(intent)
+        }
+    }
+
 
 }

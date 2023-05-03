@@ -28,4 +28,5 @@
     <string name="loginwith">Login with</string>
     <string name="signupWith">Signup with</string>
     <string name="already_reg">Already Registered ? Login Now</string>
+    <string name="Log_out">Log Out</string>
 </resources>

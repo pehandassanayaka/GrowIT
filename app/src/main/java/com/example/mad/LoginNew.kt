@@ -47,4 +47,12 @@ class LoginNew : AppCompatActivity() {
             }
         }
     }
+
+    override fun onStart(){
+        super.onStart()
+        if(firebaseAuth.currentUser != null){
+            val intent = Intent(this, UserProfile::class.java)
+            startActivity(intent)
+        }
+    }
 }

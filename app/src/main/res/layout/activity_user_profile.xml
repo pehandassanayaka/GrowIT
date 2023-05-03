@@ -63,6 +63,21 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/circles" />
 
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/logOutbtn"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="78dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="24dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_bg"
+                    android:text="@string/Log_out"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
