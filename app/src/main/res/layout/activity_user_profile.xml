@@ -85,13 +85,13 @@
                     android:layout_marginTop="12dp"
                     android:textColor="#ffffff"
                     android:textSize="18sp"
-                    app:layout_constraintEnd_toEndOf="@+id/textView"
+                    app:layout_constraintEnd_toEndOf="@+id/titleNameView"
                     app:layout_constraintHorizontal_bias="0.43"
-                    app:layout_constraintStart_toStartOf="@+id/textView"
-                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+                    app:layout_constraintStart_toStartOf="@+id/titleNameView"
+                    app:layout_constraintTop_toBottomOf="@+id/titleNameView" />
 
                 <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/titleNameView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
@@ -267,7 +267,7 @@
                             android:textSize="18sp" />
 
                         <TextView
-                            android:id="@+id/nameInput"
+                            android:id="@+id/profNameView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -304,7 +304,7 @@
                             android:textSize="18sp" />
 
                         <TextView
-                            android:id="@+id/emailInput"
+                            android:id="@+id/profEmailView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -378,7 +378,7 @@
                             android:textSize="18sp" />
 
                         <TextView
-                            android:id="@+id/phoneInput"
+                            android:id="@+id/profPhoneView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -415,7 +415,7 @@
                             android:textSize="18sp" />
 
                         <TextView
-                            android:id="@+id/textView6"
+                            android:id="@+id/profAddressView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
