@@ -95,7 +95,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text=" Olivia Wilson"
+                    android:text="@string/Not_available"
                     android:textColor="#ffffff"
                     android:textSize="20sp"
                     android:textStyle="bold"
@@ -271,7 +271,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Olivia Wilson"
+                            android:text="@string/Not_available"
                             android:textAlignment="textEnd"
                             android:textColor="#5b5b5b"
                             android:textSize="16sp" />
@@ -308,7 +308,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="oliviawilson@gmail.com"
+                            android:text="@string/Not_available"
                             android:textAlignment="textEnd"
                             android:textColor="#5b5b5b"
                             android:textSize="16sp" />
@@ -382,7 +382,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="0710266877"
+                            android:text="@string/Not_available"
                             android:textAlignment="textEnd"
                             android:textColor="#5b5b5b"
                             android:textSize="16sp" />
@@ -419,7 +419,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="79/34 Colombo road, Malabe"
+                            android:text="@string/Not_available"
                             android:textAlignment="textEnd"
                             android:textColor="#5b5b5b"
                             android:textSize="16sp" />
