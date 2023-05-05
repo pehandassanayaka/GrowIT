@@ -4,9 +4,11 @@ import android.app.Dialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.Window
 import android.widget.Button
+import android.widget.Toast
 import com.example.mad.databinding.ActivityUserProfileBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
@@ -48,6 +50,23 @@ class UserProfile : AppCompatActivity() {
             val intent = Intent(this, UpdateProfile::class.java)
             startActivity(intent)
         }
+
+        binding.deleteProf.setOnClickListener{
+            val user = auth.currentUser
+            user?.delete()?.addOnCompleteListener{
+                if(it.isSuccessful){
+                    //account already deleted
+                    Toast.makeText(this, "Account successfully deleted!", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this, Register_pg::class.java)
+                    startActivity(intent)
+                    //destroy this activity
+                    finish()
+                }else{
+                    //catch error
+                    Log.e("error : ", it.exception.toString())
+                }
+            }
+        }
     }
 
     private fun getUserData(){
@@ -69,5 +88,6 @@ class UserProfile : AppCompatActivity() {
             }
         })
     }
+
 
 }
