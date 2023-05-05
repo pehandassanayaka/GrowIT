@@ -23,7 +23,9 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"></LinearLayout>
+                    android:orientation="vertical">
+
+                </LinearLayout>
             </LinearLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -90,7 +92,7 @@
 
                 <LinearLayout
                     android:layout_width="398dp"
-                    android:layout_height="426dp"
+                    android:layout_height="500dp"
                     android:layout_marginStart="24dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="24dp"
@@ -110,7 +112,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
+                        android:layout_marginStart="20dp"
                         android:layout_marginTop="24dp"
                         android:layout_marginEnd="10dp"
                         android:layout_marginBottom="10dp"
@@ -148,12 +150,11 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginStart="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
                         android:layout_marginTop="24dp"
                         android:layout_marginEnd="10dp"
                         android:layout_marginBottom="10dp"
-                        android:layout_weight="1"
                         android:orientation="horizontal">
 
                         <TextView
@@ -176,10 +177,21 @@
 
                     </LinearLayout>
 
+                    <View
+                        android:id="@+id/view10"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="6dp"
+                        android:background="#d9d9d9" />
+
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
+                        android:layout_marginStart="20dp"
                         android:layout_marginTop="24dp"
                         android:layout_marginEnd="10dp"
                         android:layout_marginBottom="10dp"
@@ -219,7 +231,10 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
                         android:orientation="horizontal">
 
                         <TextView
@@ -253,24 +268,17 @@
                         android:layout_marginBottom="6dp"
                         android:background="#d9d9d9" />
 
-                    <View
-                        android:id="@+id/view4"
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="6dp"
-                        android:layout_marginEnd="10dp"
-                        android:layout_marginBottom="6dp"
-                        android:background="#d9d9d9" />
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textView5"
+                            android:id="@+id/updateAddress"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -278,15 +286,14 @@
                             android:textColor="#0F7015"
                             android:textSize="18sp" />
 
-                        <TextView
-                            android:id="@+id/profAddressView"
+                        <EditText
+                            android:id="@+id/edtAddress"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="48dp"
                             android:layout_weight="1"
-                            android:text="65/1 Mount view, California"
-                            android:textAlignment="textEnd"
-                            android:textColor="#5b5b5b"
-                            android:textSize="16sp" />
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="65/1 Mount view, California" />
 
                     </LinearLayout>
 
@@ -316,7 +323,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button5"
+                android:id="@+id/edtProf"
                 style="@android:style/Widget.Button"
                 android:layout_width="150dp"
                 android:layout_height="50dp"

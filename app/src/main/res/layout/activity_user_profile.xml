@@ -437,7 +437,7 @@
                 android:orientation="horizontal">
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/button5"
+                    android:id="@+id/edtProf"
                     style="@android:style/Widget.Button"
                     android:layout_width="150dp"
                     android:layout_height="50dp"

@@ -43,6 +43,11 @@ class UserProfile : AppCompatActivity() {
         if(uid.isNotEmpty()){
             getUserData()
         }
+
+        binding.edtProf.setOnClickListener{
+            val intent = Intent(this, UpdateProfile::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun getUserData(){
