@@ -65,7 +65,7 @@ class Register_pg : AppCompatActivity() {
                              * This is implemented using the functions below.
                              */
                             val currentUserId = mFirebaseAuth.currentUser!!.uid
-                            val userDetailsToStore = User( currentUserId, name, phone, address, email )
+                            val userDetailsToStore = User( currentUserId, name, phone, address, email, password )
 
                             //Passing the userDetailsToStore object into the registerUser() function
                             registerUser(userDetailsToStore)
