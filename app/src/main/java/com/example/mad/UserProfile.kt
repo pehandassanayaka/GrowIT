@@ -4,16 +4,22 @@ import android.app.Dialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.content.Intent
+import android.graphics.BitmapFactory
+import android.net.Uri
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.Window
 import android.widget.Button
 import android.widget.Toast
+import androidx.activity.result.ActivityResultCallback
+import androidx.activity.result.contract.ActivityResultContracts
 import com.example.mad.databinding.ActivityUserProfileBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
+import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import com.google.protobuf.Value
+import java.io.File
 
 class UserProfile : AppCompatActivity() {
 
@@ -24,6 +30,8 @@ class UserProfile : AppCompatActivity() {
     private lateinit var dialog: Dialog
     private lateinit var user: User
     private lateinit var uid: String
+    private lateinit var uri: Uri
+    private lateinit var storageRef: FirebaseStorage
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityUserProfileBinding.inflate(layoutInflater)
@@ -45,6 +53,21 @@ class UserProfile : AppCompatActivity() {
         if(uid.isNotEmpty()){
             getUserData()
         }
+
+        //image uri implementation
+        val imageView = binding.profImg
+        val galleryImage = registerForActivityResult(
+            ActivityResultContracts.GetContent(),
+            ActivityResultCallback {
+                imageView.setImageURI(it)
+                if (it != null) {
+                    uri = it
+                }
+            }
+        )
+
+        //initializing storage reference
+        storageRef = FirebaseStorage.getInstance()
 
         binding.edtProf.setOnClickListener{
             val intent = Intent(this, UpdateProfile::class.java)
@@ -81,6 +104,7 @@ class UserProfile : AppCompatActivity() {
                 binding.profEmailView.setText(user.email)
                 binding.profPhoneView.setText(user.phone)
                 binding.profAddressView.setText(user.address)
+                getUserProfilePicture()
             }
 
             override fun onCancelled(error: DatabaseError) {
@@ -89,5 +113,26 @@ class UserProfile : AppCompatActivity() {
         })
     }
 
+    private fun getUserProfilePicture() {
+        //find image named with the current uid
+        storageReference = FirebaseStorage.getInstance().reference.child("users/$uid")
+
+        //create temporary local file to store the retrieved image
+        val localFile = File.createTempFile("tempImage", ".jpg")
+
+        //retrieve image and store it to created temp file
+        storageReference.getFile(localFile).addOnSuccessListener {
+
+            //covert temp file to bitmap
+            val bitmap = BitmapFactory.decodeFile(localFile.absolutePath)
+
+            //bind image
+            binding.profImg.setImageBitmap(bitmap)
+
+
+        }.addOnFailureListener{
+            //Toast.makeText(activity, "Failed to retrieve image", Toast.LENGTH_SHORT).show()
+        }
+    }
 
 }
