@@ -30,4 +30,6 @@
     <string name="already_reg">Already Registered ? Login Now</string>
     <string name="Log_out">Log Out</string>
     <string name="Not_available">Not Available</string>
+    <string name="dashWelcome">Welcome Pasindu,</string>
+    <string name="dashtext">Start a new journey in agriculture</string>
 </resources>
