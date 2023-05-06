@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "528396008949",
+    "project_id": "fertilizers-2f03a",
+    "storage_bucket": "fertilizers-2f03a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528396008949:android:31635ed7b783aaa6b9b4bc",
+        "android_client_info": {
+          "package_name": "com.example.fertilizeradmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "528396008949-pkeanvt0m4tibnngqo9u5b2prpojgu1d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxfGRCIbjPUdrYzgebh9uyTI9-qCuwVR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "528396008949-pkeanvt0m4tibnngqo9u5b2prpojgu1d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
