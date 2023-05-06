@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Pesticide</string>
+    <string name="crop_type_label">Crop type</string>
+    <string name="pest_severity_label">Pest severity</string>
+    <string name="treating_area_label">Treating Area</string>
+    <string name="pesticide_label">Pesticide Name</string>
+    <string name="calculate_button">Calculate</string>
+    <string name="dosage_result">Required Dose</string>
+    <string name="safetyGuide">Safety Guidelines:
+            * Read the pesticide label carefully
+            * Wear protective clothing and equipment
+            * Prepare the pesticide solution properly
+            * Apply the pesticide carefully
+            * Store and dispose of pesticides properly
+            * Keep records of pesticide use by calender
+    </string>
+</resources>

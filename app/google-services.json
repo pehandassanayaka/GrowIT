@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "574553082995",
+    "project_id": "pesticide-33ac3",
+    "storage_bucket": "pesticide-33ac3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:574553082995:android:64fd828095fbbb89b66e06",
+        "android_client_info": {
+          "package_name": "com.example.pesticide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "574553082995-l36sh72lggpurho8n6qa53nfis7tu1pp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB-75VRX-8T-VBR9dKiborPfCOTZua8z8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "574553082995-l36sh72lggpurho8n6qa53nfis7tu1pp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

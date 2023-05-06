@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SelectedDateTextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/selected_date_background</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="crop_types">
+        <item>select crop</item>
+        <item>Paddy</item>
+        <item>Wheat</item>
+
+    </string-array>
+
+    <string-array name="pest_severities">
+        <item>select severity</item>
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+
+    <string-array name="pesticide_names">
+        <item>select pesticide</item>
+        <item>Pesticide A</item>
+        <item>Pesticide B</item>
+        <item>Pesticide C</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="@drawable/back"
+    tools:context=".UploadActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="20dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/uploadName"
+            android:background="@drawable/search_space"
+            android:layout_marginTop="20dp"
+            android:hint="Enter name"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:gravity="start|center_vertical"
+            android:padding="16dp"
+            android:textColor="@color/green"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/uploadCropType"
+            android:background="@drawable/search_space"
+            android:layout_marginTop="20dp"
+            android:hint="Enter Crop"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:gravity="start|center_vertical"
+            android:padding="16dp"
+            android:textColor="@color/green"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/uploadPrice"
+            android:background="@drawable/search_space"
+            android:layout_marginTop="20dp"
+            android:hint="Enter Price"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:gravity="start|center_vertical"
+            android:padding="16dp"
+            android:textColor="@color/green"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/uploadVolume"
+            android:background="@drawable/search_space"
+            android:layout_marginTop="20dp"
+            android:hint="Enter volume in ml"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:gravity="start|center_vertical"
+            android:padding="16dp"
+            android:textColor="@color/green"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/uploadExpDate"
+            android:background="@drawable/search_space"
+            android:layout_marginTop="20dp"
+            android:hint="Enter expiry date"
+            android:layout_marginEnd="10dp"
+            android:inputType="date"
+            android:layout_marginStart="10dp"
+            android:gravity="start|center_vertical"
+            android:padding="16dp"
+            android:textColor="@color/green"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/saveButton"
+            android:text="Save"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:cornerRadius = "20dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

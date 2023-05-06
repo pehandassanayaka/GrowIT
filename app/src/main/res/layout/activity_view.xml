@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".ViewActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchName"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:padding="12dp"
+        android:background="@drawable/search_space"
+        android:hint="Enter pesticide name correctly"
+        android:textSize="20sp"
+        android:textColor="@color/green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchButton"
+        android:text="Search"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"
+        app:cornerRadius = "20dp"
+        app:layout_constraintStart_toStartOf="@+id/searchName"
+        app:layout_constraintEnd_toEndOf="@+id/searchName"
+        app:layout_constraintTop_toBottomOf="@+id/searchName"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/search_space"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchName">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name"
+                    android:layout_weight="1"
+
+                    android:text="Pesticide Name :"
+                    android:textStyle="bold"
+                    android:textColor="@color/green"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/readName"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/green"
+                    android:textSize="18sp"/>
+
+
+
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="0dp"
+                android:alpha="0.5"
+                android:background="@color/green"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/price"
+                    android:layout_weight="1"
+                    android:text="Price :"
+                    android:textStyle="bold"
+                    android:textColor="@color/green"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/readPrice"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/green"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="0dp"
+                android:alpha="0.5"
+                android:background="@color/green"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/volume"
+                    android:layout_weight="1"
+                    android:text="Volume :"
+                    android:textStyle="bold"
+                    android:textColor="@color/green"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/readVolume"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/green"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="0dp"
+                android:alpha="0.5"
+                android:background="@color/green"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/expDate"
+                    android:layout_weight="1"
+                    android:text="Expiry Date :"
+                    android:textStyle="bold"
+                    android:textColor="@color/green"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/readExpDate"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/green"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="0dp"
+                android:alpha="0.5"
+                android:background="@color/green"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cropType"
+                    android:layout_weight="1"
+                    android:text="Crop type : "
+                    android:textStyle="bold"
+                    android:textColor="@color/green"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/readCropType"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/green"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
