@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_vertical"
-    android:background="@drawable/add_fertilizer"
+    android:background="@drawable/dashboard"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -23,7 +23,7 @@
             android:text="Add"
             android:id="@+id/mainAdd"
             android:textSize="18sp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="150dp"
             android:layout_marginEnd="10dp"
             android:layout_marginStart="10dp"
             app:cornerRadius="20dp"/>
@@ -44,6 +44,17 @@
             android:layout_height="80dp"
             android:text="Show all fertilizers"
             android:id="@+id/mainList"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            app:cornerRadius="20dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Show Activities To Do"
+            android:id="@+id/mainToDo"
             android:textSize="18sp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="10dp"

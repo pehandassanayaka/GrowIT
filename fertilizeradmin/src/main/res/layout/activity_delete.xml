@@ -6,20 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/rem"
+    android:background="@drawable/removenew"
 
 
     tools:context=".DeleteActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/green"
-        app:titleTextColor="@android:color/white"
-        app:title="Remove Fertilizer"
-        app:navigationIcon="@drawable/ic_back"
-        />
+
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -8,6 +8,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Fertilizers">
         <activity
+            android:name=".ToDoActivity"
+            android:exported="false" />
+        <activity
             android:name=".SearchActivity"
             android:exported="false" />
         <activity
