@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="@drawable/assistant"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="220dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="20dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="ADD CROP DETAILS"
+            android:id="@+id/mainUpload"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            app:cornerRadius="20dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="VIEW CROP DETAILS"
+            android:id="@+id/mainView"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            app:cornerRadius="20dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Calculate Harvest"
+            android:id="@+id/mainCal"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            app:cornerRadius="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:text="UPDATE CROP"
+                android:id="@+id/mainUpdate"
+                android:textSize="18sp"
+                android:padding="16dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/green"
+                app:strokeColor="@color/green"
+                app:strokeWidth="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                app:cornerRadius="20dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:text="REMOVE CROP"
+                android:id="@+id/mainDelete"
+                android:textSize="18sp"
+                android:padding="16dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/green"
+                app:strokeColor="@color/green"
+                app:strokeWidth="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"
+                app:cornerRadius="20dp"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

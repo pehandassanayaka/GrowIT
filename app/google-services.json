@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "545763161472",
+    "project_id": "growit-e1375",
+    "storage_bucket": "growit-e1375.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545763161472:android:246ab216409874574fbd65",
+        "android_client_info": {
+          "package_name": "com.example.growit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "545763161472-c9kt0u2nvjmh2e9flc6kpj8p4689jjia.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6RRvPsDJ0Q4iGxZNksF7grokjXgauYoc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "545763161472-c9kt0u2nvjmh2e9flc6kpj8p4689jjia.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
