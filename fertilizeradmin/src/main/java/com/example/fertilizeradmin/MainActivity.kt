@@ -67,6 +67,12 @@ class MainActivity : AppCompatActivity() {
             finish()
         }
 
+        binding.calculateBudget.setOnClickListener{
+            val intent = Intent(this@MainActivity,FertCalculator::class.java)
+            startActivity(intent)
+            finish()
+        }
+
 
 
 
