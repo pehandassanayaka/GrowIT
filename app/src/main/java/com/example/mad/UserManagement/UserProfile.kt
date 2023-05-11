@@ -1,4 +1,4 @@
-package com.example.mad
+package com.example.mad.UserManagement
 
 import android.app.Dialog
 import androidx.appcompat.app.AppCompatActivity
@@ -7,9 +7,6 @@ import android.content.Intent
 import android.graphics.BitmapFactory
 import android.net.Uri
 import android.util.Log
-import android.view.LayoutInflater
-import android.view.Window
-import android.widget.Button
 import android.widget.Toast
 import androidx.activity.result.ActivityResultCallback
 import androidx.activity.result.contract.ActivityResultContracts
@@ -18,7 +15,6 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
-import com.google.protobuf.Value
 import java.io.File
 
 class UserProfile : AppCompatActivity() {

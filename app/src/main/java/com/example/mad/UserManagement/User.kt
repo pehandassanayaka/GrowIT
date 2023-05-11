@@ -1,4 +1,4 @@
-package com.example.mad
+package com.example.mad.UserManagement
 
 import android.location.Address
 

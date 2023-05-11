@@ -1,4 +1,4 @@
-package com.example.mad
+package com.example.mad.UserManagement
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.widget.Toast
 import com.example.mad.databinding.ActivityLoginNewBinding
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.FirebaseDatabase
 
 class LoginNew : AppCompatActivity() {
 

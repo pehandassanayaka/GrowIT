@@ -1,4 +1,4 @@
-package com.example.mad
+package com.example.mad.UserManagement
 
 import android.os.AsyncTask
 import android.os.Bundle
@@ -7,6 +7,7 @@ import android.widget.ProgressBar
 import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.mad.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import org.json.JSONObject

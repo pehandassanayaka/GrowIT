@@ -18,28 +18,28 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31" >
         <activity
-            android:name=".Dashboard"
+            android:name=".UserManagement.Dashboard"
             android:exported="false" />
         <activity
-            android:name=".Weather"
+            android:name=".UserManagement.Weather"
             android:exported="false" />
         <activity
-            android:name=".Register_pg"
+            android:name=".UserManagement.Register_pg"
             android:exported="false" />
         <activity
-            android:name=".UpdateProfile"
+            android:name=".UserManagement.UpdateProfile"
             android:exported="false" />
         <activity
-            android:name=".UserProfile"
+            android:name=".UserManagement.UserProfile"
             android:exported="false" />
         <activity
-            android:name=".LoginNew"
+            android:name=".UserManagement.LoginNew"
             android:exported="false" />
         <activity
-            android:name=".Register"
+            android:name=".UserManagement.Register"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".UserManagement.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

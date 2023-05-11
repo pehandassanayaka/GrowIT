@@ -1,4 +1,4 @@
-package com.example.mad
+package com.example.mad.UserManagement
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +8,7 @@ import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import com.example.mad.R
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
@@ -82,7 +83,7 @@ class Register_pg : AppCompatActivity() {
 
     }
 
-    fun registerUser(userData:User){
+    fun registerUser(userData: User){
         firebaseStore.collection("users") // users is the name of the collection that will be created in firebase
             .document()
             // Using the fields created in the  class with help of UserInfo

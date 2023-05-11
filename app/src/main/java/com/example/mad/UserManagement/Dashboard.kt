@@ -1,10 +1,9 @@
-package com.example.mad
+package com.example.mad.UserManagement
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.mad.databinding.ActivityDashboardBinding
-import com.example.mad.databinding.ActivityUserProfileBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 
