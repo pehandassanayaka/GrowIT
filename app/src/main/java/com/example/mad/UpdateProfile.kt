@@ -67,6 +67,8 @@ class UpdateProfile : AppCompatActivity() {
         databaseReference.child(uid).addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 user = snapshot.getValue(User::class.java)!!
+                binding.updateUName.text = user.name
+                binding.updateUEmail.text = user.email
                 binding.edtName.setText(user.name)
                 binding.edtEmail.setText(user.email)
                 binding.edtPass.setText(user.password)
