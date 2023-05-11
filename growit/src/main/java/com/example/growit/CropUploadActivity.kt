@@ -7,9 +7,8 @@ import android.widget.Toast
 import com.example.growit.databinding.ActivityUploadBinding
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
-import java.lang.ref.PhantomReference
 
-class UploadActivity : AppCompatActivity() {
+class CropUploadActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityUploadBinding
     private lateinit var databaseReference: DatabaseReference
@@ -26,7 +25,7 @@ class UploadActivity : AppCompatActivity() {
             val land = binding.area.text.toString()
 
             databaseReference = FirebaseDatabase.getInstance().getReference("Crop Details")
-            val users = UserData(crop, planting, harvesting, land)
+            val users = CropUserData(crop, planting, harvesting, land)
             databaseReference.child(crop).setValue(users).addOnSuccessListener {
                 binding.uploadName.text.clear()
                 binding.pDate.text.clear()
@@ -35,7 +34,7 @@ class UploadActivity : AppCompatActivity() {
 
                 Toast.makeText(this, "Saved", Toast.LENGTH_SHORT).show()
 
-                val intent = Intent( this@UploadActivity, MainActivity::class.java)
+                val intent = Intent( this@CropUploadActivity, CropMainActivity::class.java)
                 startActivity(intent)
                 finish()
             }.addOnFailureListener{

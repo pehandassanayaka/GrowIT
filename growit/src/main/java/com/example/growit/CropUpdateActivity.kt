@@ -4,11 +4,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.growit.databinding.ActivityUpdateBinding
-import com.example.growit.databinding.ActivityUploadBinding
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
-class UpdateActivity : AppCompatActivity() {
+class CropUpdateActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityUpdateBinding
     private lateinit var databaseReference: DatabaseReference

@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.growit.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class CropMainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
@@ -15,31 +15,31 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.mainUpload.setOnClickListener{
-            val intent = Intent(this@MainActivity, UploadActivity::class.java)
+            val intent = Intent(this@CropMainActivity, CropUploadActivity::class.java)
             startActivity(intent)
             finish()
         }
 
         binding.mainUpdate.setOnClickListener{
-            val intent = Intent(this@MainActivity, UpdateActivity::class.java)
+            val intent = Intent(this@CropMainActivity, CropUpdateActivity::class.java)
             startActivity(intent)
             finish()
         }
 
         binding.mainDelete.setOnClickListener{
-            val intent = Intent(this@MainActivity, DeleteActivity::class.java)
+            val intent = Intent(this@CropMainActivity, CropDeleteActivity::class.java)
             startActivity(intent)
             finish()
         }
 
         binding.mainView.setOnClickListener{
-            val intent = Intent(this@MainActivity, ViewActivity::class.java)
+            val intent = Intent(this@CropMainActivity, CropViewActivity::class.java)
             startActivity(intent)
             finish()
         }
 
         binding.mainCal.setOnClickListener{
-            val intent = Intent(this@MainActivity, CalActivity::class.java)
+            val intent = Intent(this@CropMainActivity, CropCalActivity::class.java)
             startActivity(intent)
             finish()
         }

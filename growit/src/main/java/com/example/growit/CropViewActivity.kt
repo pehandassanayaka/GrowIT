@@ -3,12 +3,11 @@ package com.example.growit
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.example.growit.databinding.ActivityMainBinding
 import com.example.growit.databinding.ActivityViewBinding
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
-class ViewActivity : AppCompatActivity() {
+class CropViewActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityViewBinding
     private lateinit var databaseReference: DatabaseReference

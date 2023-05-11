@@ -11,22 +11,22 @@
             android:name=".MainActivity2"
             android:exported="false" />
         <activity
-            android:name=".CalActivity"
+            android:name=".CropCalActivity"
             android:exported="false" />
         <activity
-            android:name=".ViewActivity"
+            android:name=".CropViewActivity"
             android:exported="false" />
         <activity
-            android:name=".DeleteActivity"
+            android:name=".CropDeleteActivity"
             android:exported="false" />
         <activity
-            android:name=".UpdateActivity"
+            android:name=".CropUpdateActivity"
             android:exported="false" />
         <activity
-            android:name=".UploadActivity"
+            android:name=".CropUploadActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".CropMainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
