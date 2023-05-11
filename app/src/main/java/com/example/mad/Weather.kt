@@ -7,6 +7,8 @@ import android.widget.ProgressBar
 import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.*
 import org.json.JSONObject
 import java.net.URL
 import java.text.SimpleDateFormat
@@ -14,12 +16,26 @@ import java.util.*
 
 class Weather : AppCompatActivity() {
 
-    val CITY: String = "colombo"
+    var CITY: String = "colombo"
     val API: String = "06c921750b9a82d8f5d1294e1586276f" // Use API key
+    private lateinit var auth: FirebaseAuth
+    private lateinit var databaseReference: DatabaseReference
+    private lateinit var uid: String
+    private lateinit var user: User
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_weather)
+
+        //getting current users user id
+        auth = FirebaseAuth.getInstance()
+        uid = auth.currentUser?.uid.toString()
+
+        //getting database reference
+        databaseReference = FirebaseDatabase.getInstance().getReference("users")
+        if(uid.isNotEmpty()){
+            getUserData()
+        }
 
         weatherTask().execute()
 
@@ -95,5 +111,20 @@ class Weather : AppCompatActivity() {
             }
 
         }
+    }
+    private fun getUserData(){
+        databaseReference.child(uid).addValueEventListener(object : ValueEventListener {
+            //user details will get to here
+            override fun onDataChange(snapshot: DataSnapshot) {
+                //saving user data to user
+                user = snapshot.getValue(User::class.java)!!
+
+                CITY = user.address
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                TODO("Not yet implemented")
+            }
+        })
     }
 }

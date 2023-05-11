@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
     override fun onStart(){
         super.onStart()
         if(firebaseAuth.currentUser != null){
-            val intent = Intent(this, UserProfile::class.java)
+            val intent = Intent(this, Dashboard::class.java)
             startActivity(intent)
         }
     }

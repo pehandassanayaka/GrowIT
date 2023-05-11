@@ -32,4 +32,6 @@
     <string name="Not_available">Not Available</string>
     <string name="dashWelcome">Welcome Pasindu,</string>
     <string name="dashtext">Start a new journey in agriculture</string>
+    <string name="welcome_dash">Welcome</string>
+    <string name="userDash">User</string>
 </resources>

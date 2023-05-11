@@ -34,7 +34,7 @@ class LoginNew : AppCompatActivity() {
             if(email.isNotEmpty() && pass.isNotEmpty()){
                 firebaseAuth.signInWithEmailAndPassword(email, pass).addOnCompleteListener {
                     if(it.isSuccessful){
-                        val intent = Intent(this, UserProfile::class.java)
+                        val intent = Intent(this, Dashboard::class.java)
                         startActivity(intent)
                     }
                     else{
@@ -51,7 +51,7 @@ class LoginNew : AppCompatActivity() {
     override fun onStart(){
         super.onStart()
         if(firebaseAuth.currentUser != null){
-            val intent = Intent(this, UserProfile::class.java)
+            val intent = Intent(this, Dashboard::class.java)
             startActivity(intent)
         }
     }
