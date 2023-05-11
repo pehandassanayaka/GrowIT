@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/cal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="200dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/land"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/green_border"
+            android:hint="Enter land area"
+            android:padding="16dp"
+            android:inputType="number"
+            android:textColor="@color/green"
+            android:gravity="start|center_vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <EditText
+            android:id="@+id/harvest"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/green_border"
+            android:hint="Enter harvest per unit"
+            android:padding="16dp"
+            android:inputType="number"
+            android:textColor="@color/green"
+            android:gravity="start|center_vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/harvestButton"
+            android:text="Calculate Harvest"
+            android:textSize="18sp"
+            app:cornerRadius = "20dp"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/calHarvest"
+            android:background="@drawable/green_border"
+            android:text="Estimated Harvest:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:textColor="@color/green"
+            android:gravity="start|center_vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -8,6 +8,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GROWit">
         <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".CalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".DeleteActivity"
             android:exported="false" />
         <activity

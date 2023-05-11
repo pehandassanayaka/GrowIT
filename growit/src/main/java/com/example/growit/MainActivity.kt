@@ -31,5 +31,17 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+
+        binding.mainView.setOnClickListener{
+            val intent = Intent(this@MainActivity, ViewActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        binding.mainCal.setOnClickListener{
+            val intent = Intent(this@MainActivity, CalActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 }
