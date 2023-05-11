@@ -4,12 +4,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.fertilizeradmin.databinding.ActivityDeleteBinding
-import com.example.fertilizeradmin.databinding.ActivityUpdateBinding
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
-import java.lang.ref.PhantomReference
 
-class DeleteActivity : AppCompatActivity() {
+class DeleteFertActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityDeleteBinding
     private lateinit var databaseReference: DatabaseReference

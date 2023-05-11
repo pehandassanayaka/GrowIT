@@ -3,12 +3,11 @@ package com.example.fertilizeradmin
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.example.fertilizeradmin.databinding.ActivityAddBinding
 import com.example.fertilizeradmin.databinding.ActivityUpdateBinding
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
-class UpdateActivity : AppCompatActivity() {
+class UpdateFertActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityUpdateBinding
     private lateinit var databaseReference: DatabaseReference

@@ -9,7 +9,7 @@
     android:background="@drawable/removenew"
 
 
-    tools:context=".DeleteActivity">
+    tools:context=".DeleteFertActivity">
 
 
 

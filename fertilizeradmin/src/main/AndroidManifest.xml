@@ -25,22 +25,22 @@
             android:name=".ToDoActivity"
             android:exported="false" />
         <activity
-            android:name=".SearchActivity"
+            android:name=".SearchFertActivity"
             android:exported="false" />
         <activity
             android:name=".ListFertilizers"
             android:exported="false" />
         <activity
-            android:name=".DeleteActivity"
+            android:name=".DeleteFertActivity"
             android:exported="false" />
         <activity
-            android:name=".UpdateActivity"
+            android:name=".UpdateFertActivity"
             android:exported="false" />
         <activity
-            android:name=".AddActivity"
+            android:name=".AddFertActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".FertMainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
