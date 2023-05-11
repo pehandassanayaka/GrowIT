@@ -53,7 +53,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:text="Show Activities To Do"
+            android:text="Schedule activities"
             android:id="@+id/mainToDo"
             android:textSize="18sp"
             android:layout_marginTop="20dp"

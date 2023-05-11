@@ -56,8 +56,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+//        binding.mainToDo.setOnClickListener{
+//            val intent = Intent(this@MainActivity,ToDoActivity::class.java)
+//            startActivity(intent)
+//            finish()
+//        }
         binding.mainToDo.setOnClickListener{
-            val intent = Intent(this@MainActivity,ToDoActivity::class.java)
+            val intent = Intent(this@MainActivity,SchedulingActivity::class.java)
             startActivity(intent)
             finish()
         }
